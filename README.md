@@ -12,22 +12,8 @@ A comprehensive Java-based application for managing energy trading operations, b
 - **Interactive CLI**: User-friendly command-line interface
 
 ## 🏗️ Architecture
+<img width="1269" height="571" alt="Screenshot 2025-08-28 at 8 39 10 PM" src="https://github.com/user-attachments/assets/8ad87482-a60c-4f40-b22e-982602735663" />
 
-The application follows a layered architecture pattern:
-
-```
-┌─────────────────┐
-│   TradeApp     │  ← Main Application & CLI
-├─────────────────┤
-│ TradeController │  ← Controller Layer
-├─────────────────┤
-│ TradeService    │  ← Business Logic Layer
-├─────────────────┤
-│   TradeDAO      │  ← Data Access Layer
-├─────────────────┤
-│DatabaseConnection│  ← Database Layer
-└─────────────────┘
-```
 
 ## 📁 Project Structure
 
@@ -44,7 +30,7 @@ Trading-energy/
 │   ├── Trade.java               # Trade entity/model
 │   ├── DatabaseConnection.java  # Database connection manager
 │   └── InputValidator.java      # Input validation utilities
-└── README.md                     # This file
+└── sqlserver-Script-toSetUpDB.sql #DataBase setup
 ```
 
 ## 🛠️ Prerequisites
@@ -58,26 +44,8 @@ Trading-energy/
 ### 1. Database Setup
 
 1. **Install SQL Server** (if not already installed)
-2. **Create Database**:
-   ```sql
-   CREATE DATABASE EnergyTradingDB;
-   ```
-
-3. **Create Trades Table**:
-   ```sql
-   USE EnergyTradingDB;
+2. Run the sqlserver-Script-toSetUpDB.sql script to **create the Database and tables**.
    
-   CREATE TABLE Trades (
-       TradeID INT IDENTITY(1,1) PRIMARY KEY,
-       TradeDate VARCHAR(20) NOT NULL,
-       Counterparty VARCHAR(100) NOT NULL,
-       Commodity VARCHAR(50) NOT NULL,
-       Volume DECIMAL(10,2) NOT NULL,
-       Price DECIMAL(10,2) NOT NULL,
-       TradeType VARCHAR(20) NOT NULL
-   );
-   ```
-
 ### 2. Application Setup
 
 1. **Clone/Download** the project to your local machine
@@ -93,7 +61,7 @@ Trading-energy/
 
 4. **Run** the application:
    ```bash
-   java -cp "lib/*;src" TradeApp
+   java "-Djava.library.path=lib" -cp "src;lib/*" TradeApp
    ```
 
 ## 🎯 Usage
@@ -179,36 +147,4 @@ java -cp "lib/*;src" DatabaseConnectionTest
 
 - **Database Security**: Use Windows authentication when possible
 - **Input Validation**: All user inputs are validated before processing
-- **Connection Management**: Database connections are properly managed and closed
-
-## 📈 Future Enhancements
-
-- [ ] Web-based user interface
-- [ ] Real-time market data integration
-- [ ] Advanced reporting and analytics
-- [ ] Multi-user support with role-based access
-- [ ] Audit trail and logging
-- [ ] REST API endpoints
-
-## 👥 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📞 Support
-
-For issues and questions:
-- Check the troubleshooting section above
-- Review the code comments for implementation details
-- Ensure all prerequisites are met
-
----
-
-**Note**: This application is designed for educational and demonstration purposes. For production use, additional security measures and error handling should be implemented.
+- **Connection Management**: Database connections are properly managed and closed.
