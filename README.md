@@ -148,3 +148,24 @@ java -cp "lib/*;src" DatabaseConnectionTest
 - **Database Security**: Use Windows authentication when possible
 - **Input Validation**: All user inputs are validated before processing
 - **Connection Management**: Database connections are properly managed and closed.
+
+**Snapshots of Application**
+
+**Start of an Application:** <br>
+<br><img width="1353" height="484" alt="Screenshot 2025-08-29 234958" src="https://github.com/user-attachments/assets/53bebc91-142a-443c-9cb5-17f9e94ab5e3" /><br>
+
+**Adding Trade**<br>
+<br><img width="665" height="926" alt="Screenshot 2025-08-29 235131" src="https://github.com/user-attachments/assets/c602c306-1a15-4c5f-a27c-9f11bda16aee" /> <br>
+
+**Viewing the Trades** <br>
+<br> <img width="1555" height="273" alt="Screenshot 2025-08-29 235249" src="https://github.com/user-attachments/assets/938052f0-f16a-410b-9757-50421d3f3e9b" /> <br>
+
+**Updating The Trade** <br>
+<br> <img width="1885" height="254" alt="Screenshot 2025-08-29 235334" src="https://github.com/user-attachments/assets/04327175-6849-4f12-aebf-4759ffaedd53" />
+ <br>**
+**Deleting The Trade**<br>
+<br> <img width="1833" height="224" alt="Screenshot 2025-08-29 235401" src="https://github.com/user-attachments/assets/07964b8a-f3de-41a5-b193-d05d67982dce" />
+ <br>
+**Searching The Trade**<br>
+<br> <img width="1605" height="608" alt="Screenshot 2025-08-29 235448" src="https://github.com/user-attachments/assets/640a33c2-0af2-4f7d-b318-bb3b02c3360a" />
+ <br>
