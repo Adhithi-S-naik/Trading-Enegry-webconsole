@@ -32,6 +32,8 @@ Trading-energy/
 │   └── InputValidator.java      # Input validation utilities
 └── sqlserver-Script-toSetUpDB.sql #DataBase setup
 ```
+**Application Flow Daigram:**<br>
+<br><img width="1838" height="309" alt="Screenshot 2025-08-30 132441" src="https://github.com/user-attachments/assets/150564f1-ef3a-4823-b15c-b45bdea73809" /><br>
 
 ## 🛠️ Prerequisites
 
