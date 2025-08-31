@@ -164,10 +164,11 @@ java -cp "lib/*;src" DatabaseConnectionTest
 
 **Updating The Trade** <br>
 <br> <img width="1885" height="254" alt="Screenshot 2025-08-29 235334" src="https://github.com/user-attachments/assets/04327175-6849-4f12-aebf-4759ffaedd53" />
- <br>**
+ <br>
 **Deleting The Trade**<br>
 <br> <img width="1833" height="224" alt="Screenshot 2025-08-29 235401" src="https://github.com/user-attachments/assets/07964b8a-f3de-41a5-b193-d05d67982dce" />
  <br>
 **Searching The Trade**<br>
 <br> <img width="1605" height="608" alt="Screenshot 2025-08-29 235448" src="https://github.com/user-attachments/assets/640a33c2-0af2-4f7d-b318-bb3b02c3360a" />
  <br>
+ **Happy Coding!!..**
